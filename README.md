@@ -7,6 +7,7 @@
 ### 文件夹介绍
 ![avatar](/public/folder.jpg)
 
+```
 项目
 |____ config  项目打包后文件上传cdn文件
 |____ node_modules  项目依赖包
@@ -20,8 +21,9 @@
 |____ vue.config.js vue cli项目的配置文件
 |____ yarn.lock yarn下载依赖
 |____ yarn-error.log  yarn错误日志
+```
 
-
+```
 src
 |____ api  不同模块接口封装
 |____ assets  静态资源(会改变的，自己的)
@@ -45,3 +47,4 @@ src
 |____ App.vue 最基础页面
 |____ main.js 入口文件
 |____ permission.js 项目权限控制
+```
