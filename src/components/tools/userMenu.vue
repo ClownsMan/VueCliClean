@@ -47,7 +47,7 @@
     </span>
     <div class="avatar">
       <img
-        src="https://file.cmorning.cn/Hzybzx/userLogo.jpg"
+        :src="`${publicPath}/head.png`"
         alt=""
       />
     </div>
@@ -89,10 +89,15 @@
 <script>
 import { mapState } from 'vuex'
 export default {
-  computed: {
-    ...mapState({
-      info: state => state.user.info,
-    }),
+  data() {
+    return {
+      publicPath: process.env.BASE_URL,
+      messageList: [],
+      info: {
+        userName: '游客'
+      },
+      messageNum: 0
+    }
   },
   methods: {
     // 登出
